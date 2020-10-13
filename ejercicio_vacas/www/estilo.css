@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
 
-:root {
+html {
     --color-naranja: #F2994A;
     --color-negro: #000000;
     --color-blanco: #ffffff;
@@ -9,12 +9,18 @@
     --font-texto: Roboto, sans-serif;
 }
 
-  * {
+* {
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
     box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
 }
 
 body {
@@ -49,6 +55,7 @@ body > header > h1 {
     width: 15rem;
     margin: 2rem auto;
     order: 1;
+    text-shadow: 1px 1px 5px var(--color-negro);
 }
 
 header > nav{
@@ -99,6 +106,7 @@ header > nav > a{
 
 /* Banner vacas */
 
+
 main section ul{ 
     display: flex;
     flex-direction: column;
@@ -106,7 +114,7 @@ main section ul{
     align-items: center;
 }
 
-main section ul li{ 
+main>section ul li{ 
     padding: 0 0.5rem;
     margin: 1rem 0;
 }
@@ -131,6 +139,12 @@ main>section>ul>li>article>header>h1{
 
 main>section>ul>li>article>header>figure{
     order: -1;
+}
+
+main>section>ul>li>article>header>figure{
+    width: 100%;
+    height: 100%;
+    /* object-fit: es una propiedad para cuadrar una imagen en un espacio */
 }
 
 main>section>ul>li>article>p{
@@ -166,9 +180,9 @@ main>section>ul>li>article>a{
         margin: 0.5rem 0.5rem;
     }
 
-    main>section>form>section{
-        display:flex;
-        flex-direction: column;
+    main>section>form>section>fieldset>label{
+        display:block;
+        margin: 0.5rem 0;
     }
 
     input#name, input#address, select{
@@ -178,6 +192,7 @@ main>section>ul>li>article>a{
         width: 95vw;
         margin-top: 0.25rem;
         padding-left: 0.75rem;
+        border: none;
     }
 
     textarea{
@@ -187,6 +202,7 @@ main>section>ul>li>article>a{
         width:100%;
         margin-top: 0.25rem;
         padding: 0.5rem;
+        border: none;
     }
 
     form :nth-child(6){
@@ -205,16 +221,15 @@ main>section>ul>li>article>a{
 
     } 
 
-
 /* Media queries */
 
 @media (min-width: 700px) {
 
         /* Header */
 
-        body > header{
-            min-height: 80vh;
-        }
+    body > header{
+        min-height: 50vh;
+    }
 
     /* Main */
 
@@ -263,9 +278,8 @@ main>section>ul>li>article>a{
   @media (min-width: 1200px) {
 
     /* Header */
-
-    body > header{
-        min-height: 100vh;
+    body> header{
+        min-height: 70vh;
     }
 
     body> header> h1{
@@ -307,6 +321,11 @@ main>section>ul>li>article>a{
     main section ul{ 
         display: flex;
         flex-direction: row;
+        justify-content: center;
+    }
+
+    main>section>ul>li{
+        margin: 2rem 1.5rem;
     }
 
     main>section>ul>li>article>p{
@@ -346,10 +365,10 @@ main>section>ul>li>article>a{
     }
 
     input#name, input#address, select{
-    margin-top: 0.25rem;
-    padding-left: 0.75rem;
-    width: 679px;
-    height: 66px;
+        margin-top: 0.25rem;
+        padding-left: 0.75rem;
+        width: 679px;
+        height: 66px;
     } 
  
     textarea{
