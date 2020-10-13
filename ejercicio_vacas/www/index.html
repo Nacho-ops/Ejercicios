@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Vacas</title>
+</head>
+
+<body>
+<!-- Header -->
+  <header>
+    <h1>Vacas</h1>
+    <nav>
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#vacas">Vacas</a></li>
+      </ul>
+      <a class="boton" href="#formulario"><strong>Comprar</strong></a>
+    </nav>
+  </header>
+<!-- Main -->
+  <main>
+    <section id="intro">
+      <h2>Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor diam at pellentesque laoreet. Sed dapibus sem tellus, non efficitur orci molestie mollis. Morbi venenatis gravida ex, eu pharetra urna volutpat at. Curabitur eget faucibus magna. Integer a justo ligula. 
+
+      Nam purus nisl, blandit eget iaculis at, interdum et nulla. Mauris ut ante dignissim, accumsan neque at, vulputate massa. Nulla lobortis.Nam purus nisl, blandit eget iaculis at, interdum et nulla. Mauris ut ante dignissim, accumsan neque at, vulputate massa. Nulla lobortis, sapien sit amet hendrerit ullamcorper, risus magna venenatis elit, nec condimentum nisl massa id ex. Sed fermentum orci nec erat cursus cursus. Integer bibendum lacus molestie metus iaculis, ac hendrerit diam ullamcorper. Mauris placerat arcu pellentesque imperdiet pellentesque.</p>
+    </section>
+<!-- Banner vacas -->
+    <section id="vacas">
+      <ul>
+        <!-- Vaca 1 -->
+        <li>
+          <article>
+            <header>
+              <h1>Vaca 1</h1>
+              <figure>
+                <img src="img/Vaca1.png" alt="Foto da vaca 1" />
+              </figure>
+            </header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, reiciendis.</p>
+            <a href="#formulario">Comprar</a>
+          </article>
+        </li>
+        <!-- Vaca 2 -->
+        <li>
+          <article>
+            <header>
+              <h1>Vaca 2</h1>
+              <figure>
+                <img src="img/Vaca2.png" alt="Foto da vaca 2" />
+              </figure>
+            </header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, reiciendis.</p>
+            <a href="#formulario">Comprar</a>
+          </article>
+        </li>
+        <!-- Vaca 3 -->
+        <li>
+          <article>
+            <header>
+              <h1>Vaca 3</h1>
+              <figure>
+                <img src="img/Vaca3.png" alt="Foto da vaca 3" />
+              </figure>
+            </header>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, reiciendis.</p>
+            <a href="#formulario">Comprar</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+<!-- Formulario -->
+    <section id="formulario">
+      <form>
+        <h2>Lorem ipsum dolor sit amet consequuntur</h2>
+
+        <section>
+
+          <fieldset>
+            <label for="name">Nome e apelidos</label>
+            <input type="text" name="name" id="name" />
+          </fieldset>
+
+          <fieldset>
+            <label for="address">Dirección</label>
+            <input type="text" name="address" id="address" />
+          </fieldset>
+
+          <fieldset>
+            <label for="province">Provincia</label>
+            <select name="province" id="province">
+              <option></option>
+              <option>A Coruña</option>
+              <option>Lugo</option>
+              <option>Orense</option>
+              <option>Pontevedra</option>
+            </select>
+          </fieldset>
+
+        </section>
+
+        <fieldset>
+          <label for="comments">Comentarios</label>
+          <textarea name="comments" id="comments"></textarea>
+        </fieldset>
+
+        <fieldset class="checkbox">
+          <label for="newsletter">Recibir newsletter</label>
+          <input type="checkbox" name="newsletter" id="newsletter" />
+        </fieldset>
+
+        <button>Enviar</button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>

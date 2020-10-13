@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+    --color-negro: #000000;
+    --color-blanco: #ffffff;
+    --color-azul: #2D9CDB;
+    --color-gris:#C4C4C4;
+
+    --font-texto: Roboto, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-texto);
+    margin: 0 auto;
+}
+
+/* Header */
+
+body>header{
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+}
+
+body>header>nav>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end
+    
+}
+
+body>header>nav>ul>li{
+    margin: 0.5rem;
+}
+
+body>header>nav>ul>li>a{
+    text-decoration: none;
+    color: var(--color-blanco);
+}
+
+/* Main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 3rem 0 1rem;
+}
+
+main>section:nth-child(1){
+    margin: 1.5rem 0.1rem 0 0;
+    padding: 0 0 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main>section:nth-child(1)>h1{
+    font-size: 5.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+main>section:nth-child(1)>a{
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    text-decoration: none;
+    margin: 2rem auto;
+    padding: 0.5rem 4rem;
+}
+
+main>section:nth-child(2){
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+main>section:nth-child(2)>:nth-child(2){
+    text-align: center;
+    background-color: var(--color-gris);
+    padding: 5rem 5rem;
+    margin: 1rem 0;
+}
+
+/* Media queries */
+
+@media (min-width: 1000px){
+
+/* Main */
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 3rem 0 10rem;
+}
+
+main>section:nth-child(1){
+    display: block;
+}
+
+main>section:nth-child(1)>h1{
+    text-align: right;
+    margin-bottom: 1.25rem;
+}
+
+main>section:nth-child(1)>a{
+    margin: 0 0 4rem 5.5rem;
+    padding: 0.75rem 3rem;
+}
+
+main>section:nth-child(2){
+    margin: 2rem 1rem;
+}
+
+main>section:nth-child(2)>:nth-child(2){
+    margin: 1.5rem 0;
+}
+
+}
