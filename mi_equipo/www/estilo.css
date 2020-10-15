@@ -96,6 +96,17 @@ main > section > article >p {
 
 /* Media queries */
 
+@media (min-width: 600px) {
+
+    body > main{
+        margin: 0 2rem;
+    }
+
+    body > main > section{
+        margin-bottom: 1.5rem;
+    }
+}
+
  @media (min-width: 800px) {
 
     body > main {
@@ -110,6 +121,8 @@ main > section > article >p {
         width: auto;
         height: auto;
         margin: 0.5rem 5rem;
+
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     }
 
     body > main > section > header{
