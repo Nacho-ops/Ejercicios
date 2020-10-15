@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-blanco: #FFFFFF;
+    --color-naranja: #e99343;
+    --color-lila:#7000FF;
+
+    --font-letra: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--color-naranja);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body > header {
+    margin-bottom: 1rem;
+}
+
+body > header > h1{
+    font-family: var(--font-letra);
+    color: var(--color-blanco);
+    font-size: 80px;
+    font-weight:700;
+    text-align: center;
+    margin: 0.25rem;
+}
+
+main > section{
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-blanco);
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+main > section > header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > section > header > img{
+    display: flex;
+    width: 180px;
+    margin: 1rem 0rem;
+    border-radius: 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    ;
+    order: -1;
+}
+
+main > section > header > h2{
+    font-family: var(--font-letra);
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    order: 3;
+    margin-bottom: 1rem;
+}
+
+main > section > header > ul{
+    list-style: none;
+    display: flex;
+    order: 3;
+    gap: 1rem;
+}
+
+main > section > header > ul> li>img{
+    width: 45px;
+}
+
+main > section > article{
+    margin-top: 1.5rem;
+    background-color: var(--color-lila);
+    padding: 0;
+}
+
+main > section > article >p {
+    font-family: var(--font-letra);
+    color:var(--color-blanco);
+    font-size: 14px;
+    font-weight:400;
+    margin: 1rem;
+}
+
+/* Media queries */
+
+ @media (min-width: 800px) {
+
+    body > main {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    body > main > section{
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        margin: 0.5rem 5rem;
+    }
+
+    body > main > section > header{
+        width: 35%;
+        margin: 0 1.5rem;
+        justify-items: center;
+    }
+
+    body > main > section > article{
+        height: 312px;
+        width: 65%;
+        margin: 0;
+    }
+
+    body > main > section > article>p{
+        font-size: 16px;
+        font-weight:400;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    body > header{
+        margin: 6rem 0;
+    }
+
+    body > main{
+        display: flex;
+        flex-direction: row;
+        justify-content: centerss;
+        margin: 0 1rem; 
+    }
+
+    body > main > section{
+        width:312px;
+        height:547px;
+
+        margin: 1rem auto;
+
+        display: flex;
+        flex-direction: column;
+
+
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+    }
+
+    body > main > section:nth-child(2){
+        width: 312px;
+        height: 677px;      
+    }
+
+    body > main > section > article{
+        width: 312px;
+        height: auto;
+
+        margin: 1rem 0;
+    }
+
+    body > main > section:nth-child(2) >article{
+        width: 312px;
+        height: auto;  
+
+        margin-bottom: 0;    
+    }
+
+
+
+}
